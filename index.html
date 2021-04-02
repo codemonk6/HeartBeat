@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartBeat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+        integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+<body>
+
+    <!-- Side nav starts -->
+    <div class="side-bar">
+        <section class="logo">
+            <h1><i class="fas fa-heartbeat fa-2x"></i> HeartBeat</h1>
+        </section>
+        <nav>
+            <a href="index.html" class="active"><i class="fas fa-tachometer-alt icon-space"></i> Dashboard</a>
+            <a href="transaction.html"><i class="fas fa-file-invoice icon-space"></i> Transaction</a>
+            <a href="developer.html"><i class="fas fa-file-code icon-space"></i> Developer API</a>
+            <a href="settings.html"><i class="fas fa-cog icon-space"></i> Settings</a>
+        </nav>
+        <section class="logout">
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </section>
+    </div>
+
+    <!-- Side nav ends -->
+
+    <!-- main content starts -->
+    <div class="main-content">
+        <header>
+            <section class="header-title">
+                <h1>Dashboard</h1>
+            </section>
+            <div class="header-link">
+                <a href="#">Home</a>
+                <span><i class="fas fa-angle-double-right"></i></span>
+                <span class="text">Dashboard</span>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                   <div class="left">
+                    <div class="card1">
+                        <div class="currency">
+                            <i class="fas fa-dollar-sign fa-2x"></i>
+                        </div>
+                        <div class="currency-text">
+                            <span>USD Balance</span>
+                            <div class="balance">
+                                <span>.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="currency">
+                            <i class="fas fa-euro-sign fa-2x"></i>
+                        </div>
+                        <div class="currency-text">
+                            <span>HTB Balance</span>
+                            <div class="balance">
+                                <span>.00</span>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                    
+                   <div class="right">
+                    <div class="card-long">
+                        <li class="item" id="send">
+                            <a href="#send" class="btn">Send HTB</a>
+                            <div class="data">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia maiores quo asperiores corrupti fugiat quaerat praesentium tempora odio reprehenderit?</p>
+                            </div>
+                        </li>
+
+                        <li class="item" id="recieve">
+                            <a href="#recieve" class="btn">Recieve HTB</a>
+                            <div class="data">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia maiores quo asperiores corrupti fugiat quaerat praesentium tempora odio reprehenderit?</p>
+                            </div>
+                        </li>
+                </div>
+                   </div>
+
+                    <div class="clr"></div>
+
+                    <div class="card-big">
+                        <div class="card-big-item">
+                            <label>
+                                Transactions
+                            </label>
+                            <input type="text" placeholder="Block height/hash, txid, address">
+                        </div>
+                            <table>
+                                <thead>
+                                    <tr class="head">
+                                        <th>Date</th>
+                                        <th>Recieved/Sent</th>
+                                        <th>Amount</th>
+                                        <th>Transaction ID</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>23/09/2021</td>
+                                        <td>89get4rjdsf9t3jv89t3rtyn8</td>
+                                        <td>30000</td>
+                                        <td>121329mdw8432</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23/09/2021</td>
+                                        <td>89get4rjdsf9t3jv89t3rtyn8</td>
+                                        <td>30000</td>
+                                        <td>121329mdw8432</td>
+                                    </tr>
+                                </tbody>
+                             </table>
+                    </div>
+                </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
+

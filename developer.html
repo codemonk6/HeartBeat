@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartBeat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+        integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+<body>
+
+    <!-- Side nav starts -->
+    <div class="side-bar">
+        <section class="logo">
+            <h1><i class="fas fa-heartbeat fa-2x"></i> HeartBeat</h1>
+        </section>
+        <nav>
+            <a href="index.html"><i class="fas fa-tachometer-alt icon-space"></i> Dashboard</a>
+            <a href="transaction.html"><i class="fas fa-file-invoice icon-space"></i> Transaction</a>
+            <a href="developer.html" class="active"><i class="fas fa-file-code icon-space"></i> Developer API</a>
+            <a href="settings.html"><i class="fas fa-cog icon-space"></i> Settings</a>
+        </nav>
+        <section class="logout">
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </section>
+    </div>
+
+    <!-- Side nav ends -->
+
+    <!-- main content starts -->
+    <div class="main-content">
+        <header>
+            <section class="header-title">
+                <h1>Developer API</h1>
+            </section>
+            <div class="header-link">
+                <a href="#">Home</a>
+                <span><i class="fas fa-angle-double-right"></i></span>
+                <span class="text">Developer API</span>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                    <div class="content1">
+                        <div class="main1">
+                            <form>
+                                <label>API Address</label>
+                                <input type="text">
+                                <label>API Key</label>
+                                <input type="text" placeholder="Dewfewir3458rj8r2jqd@#@#msk23qwwe23mmvt">
+                            </form>
+                        </div>
+                        <div class="side-1">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ullam deserunt maiores ex ut tempore dicta est dignissimos saepe dolorum!</p>
+                            <span>NOTE:</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cumque necessitatibus ducimus voluptas rem sunt esse! Fugiat esse deleniti nobis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="clr"></div>
+
+                    <hr>
+                    <div class="content2">
+                        <div class="main1">
+                            <h1>Send HTB</h1>
+                            <label>URL</label>
+                                <input type="text" placeholder="https://dfdfjkjfo.com/send">
+                            </form>
+                            <p><span class="red">Method:</span> POST</p>
+                            <p><span class="red">Content-Type:</span> appliction/json</p>
+                        </div>
+                        <div class="side-1">
+                            <h2>Request Body</h2>
+                            <code>
+                                {
+                                    "type": "people",
+                                    "id": "42",
+                                    "attributes": {
+                                      "name": "John",
+                                      "age": 80,
+                                      "gender": "male"
+                                    }
+                                }
+                            </code>
+
+                            <h2>Response</h2>
+                            <code>
+                                {
+                                    "type": "people",
+                                    "id": "42",
+                                    "attributes": {
+                                      "name": "John",
+                                      "age": 80,
+                                      "gender": "male"
+                                    }
+                                }
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="clr"></div>
+                    <hr>
+
+                    <div class="content3">
+                        <div class="main1">
+                            <h1>GET HTB BALANCE</h1>
+                            <label>URL</label>
+                                <input type="text" placeholder="https://dfdfjkjfo.com/developer/balace/1232ksker33@@#kd">
+                            </form>
+                            <p><span class="red">Method:</span> GET</p>
+                        </div>
+                        <div class="side-1">
+                            <h2>Response</h2>
+                            <code>
+                                {
+                                    "type": "people"
+                                }
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="clr"></div>
+                    <hr>
+
+                    <div class="content4">
+                        <div class="main1">
+                            <h1>RECEIVE HTB</h1>
+                            <label>URL to QR code image</label>
+                                <input type="text" placeholder="https://dfdfjkjfo.com/qrcode">
+                            </form>
+                            <p><span class="red">Method:</span> GET</p>
+                        </div>
+                        <div class="side-1 center">
+                            <h2>Response (QR Image)</h2>
+                        </div>
+                    </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
+

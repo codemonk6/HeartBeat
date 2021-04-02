@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;600&family=Fjalla+One&family=Fredoka+One&display=swap');
+
+*,*::before, 
+*::after {
+    text-decoration: none;
+    list-style-type: none;
+    outline-style: none;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background: #0A090E;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1, h2 {
+    font-size: 16px;
+}
+
+.side-bar {
+    width: 240px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #0C0B10;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo > h1 {
+    color: #66FF66;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 30px;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+nav > a {
+    display: block;
+    color: #fff;
+    padding: 15px 30px;
+    outline-style: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    color: #66FF66;
+}
+
+.icon-space {
+    margin-right: 1rem;
+    color: #66FF66;
+}
+
+.active {
+    background: #0A090E;
+    color: #66FF66;
+    border-left: 2px solid #66FF66;
+}
+
+.logout {
+    margin-top: auto;
+    padding: 70px 30px;
+}
+
+.logout > a {
+    color: #fff;
+    outline-style: none;
+    transition: all 0.3s ease;
+
+}
+
+.logout > a:hover {
+    color: #66FF66;
+}
+
+.main-content {
+    margin-left: 240px;
+}
+
+header {
+    height: 80px;
+    padding: 2rem;
+    background: #0C0B10;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-link > a {
+    padding-right: .5rem;
+    color: #66FF66;
+    outline-style: none;
+    transition: all 0.3s ease;
+    outline-style: none;
+}
+
+.header-link > a:hover {
+    color: #006900;
+}
+
+.container {
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.card1 {
+    width: 46%;
+    float: left;
+    background: #0C0B10;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 2rem;
+}
+
+.card2 {
+    width: 46%;
+    float: right;
+    float: none;
+    background: #0C0B10;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+}
+
+.currency {
+    border: 2px solid #66FF66;
+    border-radius: 50%;
+    width: 26%;
+    height: 60%;
+    color: #66FF66;
+    text-align: center;
+    padding: .6rem;
+}
+
+.currency-text {
+    padding: .5rem;
+}
+
+.balance {
+    margin-top: .3rem;
+    font-size: 1.5rem;
+}
+
+.card-long {
+    width: 100%;
+    float: right;
+    overflow: hidden;
+}
+
+.item {
+    border-bottom: 1px solid #0a090e;
+}
+
+.item:target .data {
+    max-height: 10rem;
+}
+
+.btn {
+    display: block;
+    padding: 5px 10px;
+    background: #006900;
+    color: #fff;
+}
+
+.data {
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.card-big {
+    background: #0C0B10;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.card-big-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card-big label {
+    margin-right: 150px;
+    padding: .6rem;
+}
+
+.card-big input[type='text'] {
+    width: 100%;
+    border-radius: 20px;
+    padding: .6rem;
+    border: none;
+    background: #0A090E;
+    color: #ccc;
+}
+
+.side1 {
+    background: #0C0B10;
+    width: 47%;
+    float: left;
+    height: 300px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.side1 h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.side1 input[type='password'] {
+    display: block;
+    width: 100%;
+    padding: .6rem;
+    background: #010102;
+    color: #ccc;
+    border: none;
+    margin-bottom: .5rem;
+}
+
+.side1 input[type='submit'] {
+    display: block;
+    width: 100%;
+    padding: .6rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background: #006900;
+}
+
+.side2 {
+    background: #0C0B10;
+    width: 47%;
+    float: right;
+    height: 300px;
+    padding: 1rem;
+}
+
+.side2 h1 {
+    padding: 1rem;
+    background: #006900;
+    margin-bottom: .5rem;
+}
+
+.form-items {
+    padding: .5rem;
+}
+
+.side2 hr {
+    margin: 1rem;
+}
+
+.clr {
+    clear: both;
+}
+
+.card-data {
+    background: #0C0B10;
+    padding: 1rem;
+}
+
+.card-data h1 {
+    width: 100%;
+    background: #006900;
+    padding: .6rem;
+}
+
+.card-data p {
+    padding: 1rem 0;
+}
+
+hr {
+    margin-bottom: 1rem;
+}
+
+.card-data input[type='password'] {
+    width: 50%;
+    padding: .6rem;
+    border: none;
+    background: #010102;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.card-data input[type='button'] {
+    display: inline-block;
+    padding: .6rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background: #006900;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    width: 48%;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+   padding: 1rem;
+} 
+
+thead, td {
+    padding: .5rem;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+.main1 {
+    width: 48%;
+    float: left;
+}
+
+label {
+    display: block;
+    padding: .5rem 0;
+}
+
+.main1 input[type='text'] {
+    width: 100%;
+    padding: .6rem;
+    border: none;
+    background: #010102;
+    color: #ccc;
+}
+
+.side-1 {
+    width: 48%;
+    float: right;
+    background: #0C0B10;
+    padding: 1rem;
+}
+
+.side-1 span {
+    color: #ff0404;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.red {
+    color: #ff0404;
+    padding: 1rem 0;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
